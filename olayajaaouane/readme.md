@@ -4,6 +4,14 @@ Le projet suivant s’articule autour du trombinoscope de la promotion 2020-2021
 * Premièrement, diffuser un formulaire à remplir par les étudiants de chaque promotion. Ce formulaire contient généralement des questions sur le cursus et les compétences de ces étudiants afin d’évaluer leurs prérequis et de bien préciser le degré du besoin d’approfondissement en terme de technologies, les langages de programmation, les outils informatiques…
 
 * Deuxièment, à l’aide d’une interface, on affiche pour chaque étudiant une carte contenant la photo de ce dernier, ses informations personnelles telles que son nom, prénom et la formation qu’il suit, ainsi les informations qu’il a déjà saisies dans le formulaire sous forme des graphs (graphique en secteur dans ce projet).
+# fonctionnalités à rajouter au projet 
+## envoyer email automatiquement
+Cette fonctionnalité permet le proffesseur d'envoyer un email automatiquement une fois il clique sur l'adresse mail affichée sur chaque carte d'étudiant. Pour éviter tout basculement entre un navigateur et la page du trombinoscope.
+## Correspondance entre une couleur et un degré du besoin 
+Pour chaque couleur afficher dans les graphiques des compétences techniques des étudiants et leurs besoins, on associe une couleur différente. A savoir la création d'un annex des couleurs en correspondance avec la signification.
+## gestion des étudiants 
+Un boutton pour ajouter un étudiant.
+Dans la carte de chaque étudiant, on ajoute des boutton permettant de supprimer et modifier les informations de l'étudiant ou l'étudiant lui même.
 # installation
 afin d'obtenir tous les projets des étudiants dy master 2 THYP, il faut simplement cloner le projet à l'aide de la commande suivante:
 <code>git clone https://github.com/samszo/THYP_20-21.git</code>
@@ -32,4 +40,5 @@ D3 n'est pas un cadre monolithique qui cherche à fournir toutes les fonctionnal
 ### La base de données utilisée
 les données sont récupérées à partir du formulaire dans un fichier .csv en ligne ou téléchargeable du URL suivant:
 (https://docs.google.com/spreadsheets/d/e/2PACX-1vQHni5Lu--I9WKTWGHOJ3_SBRW47sPTvxxRN6FOaGchhMztr4gm3I5C91EJq1CcGOsmfsOfa2f7PfrF/pub?gid=11903047&single=true&output=csv)
+
 
