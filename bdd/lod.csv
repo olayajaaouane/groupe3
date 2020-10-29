@@ -1,0 +1,5 @@
+table,colonne,lien
+Professor,"idProfessor, name, nickname, email, calendar link",https://duraspace.org/wp-content/uploads/2020/02/vivo.owl#Professor
+Student,"idStudent, name, nickname,Photo, email, AcademicDepartement",https://duraspace.org/wp-content/uploads/2020/02/vivo.owl#Student
+askAction,"idAskAction,Question,replyAction_idreplyAction","https://schema.org/AskAction"
+replyAction,"idReplyAction,ResultComment",
