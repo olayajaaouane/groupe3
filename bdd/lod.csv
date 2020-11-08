@@ -1,5 +1,19 @@
 table,colonne,lien
-Professor,"idProfessor, name, nickname, email, calendar link",https://duraspace.org/wp-content/uploads/2020/02/vivo.owl#Professor
-Student,"idStudent, name, nickname,Photo, email, AcademicDepartement",https://duraspace.org/wp-content/uploads/2020/02/vivo.owl#Student
-askAction,"idAskAction,Question,replyAction_idreplyAction","https://schema.org/AskAction"
-replyAction,"idReplyAction,ResultComment",https://schema.org/ReplyAction
+Professor,idProfessor,http://purl.org/dc/terms/identifier
+,name,http://xmlns.com/foaf/0.1/firstName
+,familyname,http://xmlns.com/foaf/0.1/familyName
+,email,http://xmlns.com/foaf/0.1/mbox
+,agenda,http://xmlns.com/foaf/0.1/workInfoHomepage
+,,
+Student,idStudent,http://purl.org/dc/terms/identifier
+,firstname,http://xmlns.com/foaf/0.1/firstName
+,familyname,http://xmlns.com/foaf/0.1/familyName
+,Photo,http://xmlns.com/foaf/0.1/img
+,Email,http://xmlns.com/foaf/0.1/mbox
+,AcademicDepartement,http://purl.org/ontology/bibo/degree
+,,
+askAction,idQuestion,http://purl.org/dc/terms/identifier
+,contenuQuestion,http://purl.org/ontology/bibo/content
+,,
+replyAction,idReponse,http://purl.org/dc/terms/identifier
+,contenuReponse,http://purl.org/ontology/bibo/content
