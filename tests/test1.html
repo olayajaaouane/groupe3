@@ -22,31 +22,38 @@
 
 <script>
 
-header('Access-Control-Allow-Origin: *');
-
-let urlDataStudents="http://localhost/omeka-s/api/item_sets/26";
+let urlDataStudents="http://localhost/omeka-s/api/items?item_set_id=26";
 let urlDataProfs="http://localhost/omeka-s/api/item_sets/27";
 let urlDataQuestions="http://localhost/omeka-s/api/item_sets/28";
 let urlDataResponses="http://localhost/omeka-s/api/item_sets/29";
 
 d3.json(urlDataStudents).then(function(data) {
   d3.select('#dataStudents').selectAll('div').data(data).enter().append('div')
-      .html(d=>d["dcterms:title"][0]["@value"]);
+      .html(d=>{ 
+        let v=d["foaf:family_name"][0]["@value"]+" "+d["foaf:firstName"][0]["@value"]
+        return v;
+
+      })
+      .on("click",d=>{showStudent(d)});
+      
 });
 
 d3.json(urlDataProfs).then(function(data) {
   d3.select('#dataProfs').selectAll('div').data(data).enter().append('div')
-      .html(d=>d["dcterms:title"][0]["@value"]);
+      .html(d=>d["dcterms:description"][0]["@value"]);
 });
 
 d3.json(urlDataQuestions).then(function(data) {
   d3.select('#dataQuestions').selectAll('div').data(data).enter().append('div')
-      .html(d=>d["dcterms:title"][0]["@value"]);
+      .html(d=>d["dcterms:description"][0]["@value"]);
 });
 
 d3.json(urlDataResponses).then(function(data) {
   d3.select('#dataResponses').selectAll('div').data(data).enter().append('div')
-      .html(d=>d["dcterms:title"][0]["@value"]);
+      .html(d=>d["dcterms:description"][0]["@value"]);
 });
+function showStudent(d){
+  console.log(d);
+}
 </script>
 </html>
