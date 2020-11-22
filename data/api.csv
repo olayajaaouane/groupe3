@@ -1,0 +1,7 @@
+titre;url
+afficher les contenus de la collection des étudiants (collection of student);/api/items?item_set_id=26
+afficher les contenus de la collection des réponses (collection of answers);/api/items?item_set_id=29
+afficher les contenus de la collection des questions (collection of questions);/api/items?item_set_id=28
+afficher les contenus de la collection des profs (ollection of professors);/api/items?item_set_id=27
+recherche par mail sur l'étudiant avec cet email : olaya.jaaouane@usmba.ac.ma;/api/items?property[0][property]=123&property[0][type]=eq&property[0][text]=olaya.jaaouane@usmba.ac.ma
+recherche de l'étudiant avec id=student1 et dans la collection des étudiant (2);/api/items?fulltext_search=student1&property[0][joiner]=and&property[0][type]=eq&resource_template_id[]=2
