@@ -56,7 +56,7 @@ d3.json(urlDataProfs).then(function(data) {
 d3.json(urlDataQuestions).then(function(data) {
   d3.select('#dataQuestions').selectAll('div').data(data).enter().append('div')
       .html(d=>{ 
-        let v=d["bibo:content"][0]["@value"]+" "+d["foaf:firstName"][0]["@value"]
+        let v=d["bibo:content"][0]["@value"]
         return v;
 
       })
