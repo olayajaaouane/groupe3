@@ -21,9 +21,9 @@
 <script>
 
 let urlDataStudents="../data/item_set_students.json";
-let urlDataProfs="http://localhost/omeka-s/api/items?item_set_id=27";
-let urlDataQuestions="http://localhost/omeka-s/api/items?item_set_id=28";
-let urlDataResponses="http://localhost/omeka-s/api/items?item_set_id=29";
+let urlDataProfs="../data/profs.json";
+let urlDataQuestions="../data/questions.json";
+let urlDataResponses="../data/answers.json";
 
 d3.json(urlDataStudents).then(function(data) {
 var c = d3.select('#etuCards').selectAll(".card mb-3").data(data).enter().append(c)
