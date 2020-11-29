@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATELIER DISPOSITIFS LITTÉRAIRES NUMÉRIQUES : tests données Omeka</title>
+        <meta name="description" content="ATELIER DISPOSITIFS LITTÉRAIRES NUMÉRIQUES">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://d3js.org/d3.v5.min.js"></script>    
+        <script src="trombino.js"></script>    
+    </head>
+    <body>
+        <div id='tools'></div>
+        <div id='tableOmeka'></div>            
+
+    </body>
+    <script>
+        let oADLN = new trombino({
+            cont:d3.select('#tableOmeka')
+            , apiUrl:"http://localhost/omeka-s/api/"
+            , waitUrl:"asset/svg/wait-pacman.svg"
+        });
+        oADLN.getListeVocabulaire('tools',oADLN.showData);
+        //oADLN.showData(15);
+        let rs = oADLN.getItems(15);
+        console.log(rs);
+
+    </script>
+</html>
