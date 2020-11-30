@@ -2,6 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix educ: <http://educate.org/ontology/education#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
@@ -9,20 +10,43 @@
 <http://groupe.org/ontology/grpTrois> a owl:Ontology ;
     dcterms:title "Formation Université Paris 8" .
 
-educ:Teach a rdf:Property ;
-    rdfs:label "Teach" ;
-    rdfs:comment "Teach" ;
-    rdfs:domain o:Resource ;
-    rdfs:isDefinedBy educ: .
-
-educ:Questionning a rdf:Property ;
-    rdfs:label "Questionning" ;
-    rdfs:comment "Questionning" ;
-    rdfs:domain o:Resource ;
-    rdfs:isDefinedBy educ: .
-
-educ:Answering a rdf:Property ;
+educ:Answering a rdfs:Class ;
     rdfs:label "Answering" ;
-    rdfs:comment "Answering" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+educ:answer a rdfs:Class ;
+    rdfs:label "answer" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+educ:question a rdfs:Class ;
+    rdfs:label "question" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+educ:HasStudent a rdf:Property ;
+    rdfs:label "HasStudent" ;
+    rdfs:comment "HasStudent" ;
     rdfs:domain o:Resource ;
     rdfs:isDefinedBy educ: .
+
+educ:HasProf a rdf:Property ;
+    rdfs:label "HasProf" ;
+    rdfs:comment "HasProf" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy educ: .
+
+educ:HasQuestion a rdf:Property ;
+    rdfs:label "HasQuestion" ;
+    rdfs:comment "HasQuestion" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy educ: .
+
+educ:HasAnswer a rdf:Property ;
+    rdfs:label "HasAnswer" ;
+    rdfs:comment "HasAnswer" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy educ: .
+
+
