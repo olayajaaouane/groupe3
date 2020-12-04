@@ -1,4 +1,4 @@
-class tromb {
+class trombino {
     constructor(params) {
         var me = this;
         this.cont = params.cont ? params.cont : d3.select('body');
@@ -6,11 +6,8 @@ class tromb {
         this.waitUrl = params.waitUrl ? params.waitUrl : false;
         this.data = params.data ? params.data : {}; 
         this.idVocab = 0;
-        var vocab, tables, classes, properties, items=[], omekaQuery=[],divWait
-        , propsForOmekaType = {
-            'o:ResourceClass':['@id','o:id','o:label','o:term']
-            ,'o:Property':['@id','o:id','o:label','o:term']
-            ,'o:Item':['@id','o:id','o:title','o:resource_class','properties']
+        var vocab, tables, classes, properties, items=[], omekaQuery=[],divWait,propsForOmekaType = {
+            'o:ResourceClass':['@id','o:id','o:label','o:term'],'o:Property':['@id','o:id','o:label','o:term'],'o:Item':['@id','o:id','o:title','o:resource_class','properties']
         };
 
         function verifInit(){
@@ -150,10 +147,10 @@ class tromb {
             let urlAdmin = "";
             switch (d.t) {
                 case 'o:ResourceClass':
-                    urlAdmin = d.v.substr(0,d.v.indexOf('api'))+'admin/vocabulary/15/classes';
+                    urlAdmin = d.v.substr(0,d.v.indexOf('api'))+'admin/vocabulary/10/classes';
                     break;
                 case 'o:Property':
-                    urlAdmin = d.v.substr(0,d.v.indexOf('api'))+'admin/vocabulary/15/properties';
+                    urlAdmin = d.v.substr(0,d.v.indexOf('api'))+'admin/vocabulary/10/properties';
                     break;
                 default:
                     urlAdmin = d.v.replace('api/items', 'admin/item');
@@ -179,7 +176,7 @@ class tromb {
         }
 
         function getTypePropertiesVals(d, t) {
-            let vs = [], vals=[];
+            var vs = [], vals=[];
             if(propsForOmekaType[t]){
                 propsForOmekaType[t].forEach(p=>{
                     if(p=='properties'){
