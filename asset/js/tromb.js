@@ -1,4 +1,4 @@
-class trombino {
+class tromb {
     constructor(params) {
         var me = this;
         this.cont = params.cont ? params.cont : d3.select('body');
