@@ -7,7 +7,7 @@
         <meta name="description" content="ATELIER DISPOSITIFS LITTÉRAIRES NUMÉRIQUES">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://d3js.org/d3.v5.min.js"></script>    
-        <script src="https://github.com/olayajaaouane/groupe3/tree/main/asset/js/tromb.js"></script>    
+        <script src="../asset/js/tromb.js"></script>    
     </head>
     <body>
         <div id='tools'></div>
@@ -17,7 +17,7 @@
     <script>
         let oADLN = new tromb({
             cont:d3.select('#tableOmeka')
-            , apiUrl:"https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/"
+            , apiUrl:"https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api"
             , waitUrl:"asset/svg/wait-pacman.svg"
         });
         oADLN.getListeVocabulaire('tools',oADLN.showData);
