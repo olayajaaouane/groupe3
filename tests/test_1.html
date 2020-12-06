@@ -229,6 +229,7 @@ function RechercheByName()
     { 
         localStorage.clear();
     var name=document.getElementById('searchByName').value;
+    data=d3.json(urlDataStudents)
         if (name=="")
             { data=d3.json(urlDataStudents)
               setData(data,false);
