@@ -36,7 +36,7 @@ d3.json(urlDataStudents).then(function(data) {
 var c = d3.select('#etuCards').selectAll(".card mb-3").data(data).enter().append(c)
                 c.append("img").attr("src",c.html(d=>{ 
                   console.log(d);
-                  let v=d["foaf:img"][0]["@value"]
+                  let v=d["thumbnail_display_urls"][0]["large"]
                   
                   return v;
                         })
