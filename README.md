@@ -13,7 +13,7 @@ https://olayajaaouane.github.io/groupe3/
 
 # Le lien vers la template
 https://olayajaaouane.github.io/groupe3/template/
-https://olayajaaouane.github.io/groupe3/tests/test_1.html
+* https://olayajaaouane.github.io/groupe3/tests/test_1.html
 
 # Contexte général du projet
 Le projet suivant s’articule autour du trombinoscope de la promotion 2020-2021 à Paris 8. Il consite à :
