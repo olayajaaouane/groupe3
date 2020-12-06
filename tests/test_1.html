@@ -234,8 +234,8 @@ function RechercheByName()
               setData(data,false);
             return;
             }
-            
-          new_data=data.filter(function(d){return d["foaf:family_name"][0]["@value"].toLowerCase() == name.toLowerCase();});
+            dataform=data[0]
+          new_data=dataform.filter(function(d){return d["foaf:family_name"][0]["@value"].toLowerCase() == name.toLowerCase();});
             console.log(new_data);
             setData(new_data,true);
     
