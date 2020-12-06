@@ -34,6 +34,7 @@ let urltest="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api
 
 d3.json(urlDataStudents).then(function(data) {
 var c = d3.select('#etuCards').selectAll(".card mb-3").data(data).enter().append(c)
+                .attr("style","border-right: 2px dashed #EEEEEE;")
                 c.append("img").attr("id","image").attr('src', d=>{
             return d["thumbnail_display_urls"]["square"];
               })
