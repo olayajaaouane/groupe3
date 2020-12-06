@@ -12,7 +12,7 @@ le projet du groupe 3
 https://olayajaaouane.github.io/groupe3/
 
 # Le lien vers la template
-https://olayajaaouane.github.io/groupe3/template/
+* https://olayajaaouane.github.io/groupe3/template/
 * https://olayajaaouane.github.io/groupe3/tests/test_1.html
 
 # Contexte général du projet
