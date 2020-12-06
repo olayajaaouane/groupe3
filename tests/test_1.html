@@ -85,7 +85,7 @@ var c = d3.select('#etuCards').selectAll(".card mb-3").data(data).enter().append
                 //ici debut affichage question
                 d3.json(urlressource).then(function(data1) {
                 var b= d3.select('#open_dialog').append("div").attr("id","question").attr("class","row").selectAll(".card mb-3").data(data1).enter().append(b)
-                .append('div').style('margin-left','20px');
+                .append('div');
                 b.append("h6")
                 .html(d=>{ 
                   console.log(d);
