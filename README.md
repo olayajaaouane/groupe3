@@ -1,10 +1,10 @@
 # groupe3
 le projet du groupe 3
 # Membres de group
-Olaya jaaouane
-Widad chouef
-Maroua jellal
-Driss bensaid
+* Olaya jaaouane
+* Widad chouef
+* Maroua jellal
+* Driss bensaid
   
 le projet du groupe 3
 
