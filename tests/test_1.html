@@ -23,14 +23,14 @@
 
 <script>
 
-let urlDataStudents="https://jardindesconnaissances.univ-paris8.fr/omeka-s/api/items?item_set_id=26";
-let urlDataProfs="https://jardindesconnaissances.univ-paris8.fr/omeka-s/api/items?item_set_id=27";
-let urlDataQuestions="https://jardindesconnaissances.univ-paris8.fr/omeka-s/api/items?item_set_id=28";
-let urlDataResponses="https://jardindesconnaissances.univ-paris8.fr/omeka-s/api/items?item_set_id=29";
-let urlressource="https://jardindesconnaissances.univ-paris8.fr/omeka-s/api/items?fulltext_search=&property[0][joiner]=and&property[0][property]=&property[0][type]=eq&property[0][text]=&resource_class_id[]=31&resource_template_id[]=&item_set_id[]=&site_id=&owner_id=&submit=Search";
-let urlrep1="https://jardindesconnaissances.univ-paris8.fr/omeka-s/api/items?fulltext_search="
+let urlDataStudents="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/items?item_set_id=26";
+let urlDataProfs="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/items?item_set_id=27";
+let urlDataQuestions="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/items?item_set_id=28";
+let urlDataResponses="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/items?item_set_id=29";
+let urlressource="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/items?fulltext_search=&property[0][joiner]=and&property[0][property]=&property[0][type]=eq&property[0][text]=&resource_class_id[]=31&resource_template_id[]=&item_set_id[]=&site_id=&owner_id=&submit=Search";
+let urlrep1="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/items?fulltext_search="
 let urlrep2="&property[0][joiner]=and&property[0][property]=232&property[0][type]=eq&resource_class_id[]=128&site_id=&submit=Search"
-let urltest="https://jardindesconnaissances.univ-paris8.fr/omeka-s/api/items?fulltext_search=Student2&property[0][joiner]=and&property[0][property]=232&property[0][type]=eq&resource_class_id[]=128&site_id=&submit=Search"
+let urltest="https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g3/omk/api/items?fulltext_search=Student2&property[0][joiner]=and&property[0][property]=232&property[0][type]=eq&resource_class_id[]=128&site_id=&submit=Search"
 
 d3.json(urlDataStudents).then(function(data) {
 var c = d3.select('#etuCards').selectAll(".card mb-3").data(data).enter().append(c)
