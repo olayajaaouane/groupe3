@@ -37,7 +37,7 @@ var c = d3.select('#etuCards').selectAll(".card mb-3").data(data).enter().append
                 .append('div').style('margin-left','20px');
                 c.append("img").attr("src",c.html(d=>{ 
                   console.log(d);
-                  let v=d["o:media"][0]["@id"]
+                  let v=d["o:original_url"]
                   
                   return v;
                         })
