@@ -1,12 +1,11 @@
 # groupe3
 le projet du groupe 3
-# Membres de group
+# Membres du group
 * Olaya jaaouane
 * Widad chouef
 * Maroua jellal
 * Driss bensaid
-  
-le projet du groupe 3
+
 
 # Le lien vers la page
 https://olayajaaouane.github.io/groupe3/
