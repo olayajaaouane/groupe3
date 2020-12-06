@@ -224,18 +224,9 @@ function show(d){
   console.log(d);
 }
 
-function displaySpinners()
-    {
-        document.getElementById("spinner1").style.display = "block";
-        document.getElementById("spinner2").style.display = "block";
-    }
-    function hideSpinners()
-    {
-        document.getElementById("spinner1").style.display = "none";
-        document.getElementById("spinner2").style.display = "none";
-    }
+
 function RechercheByName()
-    { displaySpinners();
+    { 
         localStorage.clear();
     var name=document.getElementById('searchByName').value;
         if (name=="")
