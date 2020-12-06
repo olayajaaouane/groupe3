@@ -243,7 +243,7 @@ function RechercheByName()
             return;
             }
             dataForm = csv_data[0];
-          new_data=dataForm.filter(function(d){return d["foaf:family_name"][0]["@value"].toLowerCase() == name.toLowerCase();});
+          new_data=dataForm.filter(function(d){return d["foaf:family_name"].toLowerCase() == name.toLowerCase();});
             console.log(new_data);
             setData(new_data,true);
     
